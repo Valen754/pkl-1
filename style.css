@@ -1,4 +1,3 @@
-/* style.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,19 +5,32 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #1589b4;
   color: #fff;
-  padding: 10px 20px; /* Increased padding for better spacing */
-  display: flex; /* Make header a flex container */
-  justify-content: space-between; /* Space between h1 and nav */
-  align-items: center; /* Vertically center content */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.custom-header {
+  margin: 0;
+  font-size: 24px;
 }
 
 .navbar {
   list-style-type: none;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   padding: 0;
+  margin-left: auto;
 }
 
 .navbar li {
@@ -37,22 +49,44 @@ header {
 
 .navbar a:hover,
 .navbar a.active {
-  color: #ff6600;
+  color: #000000;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+.container.card-container {
+  max-width: 600px;  /* Mengatur lebar maksimum kontainer kartu */
+  margin: 20px auto; /* Tengahkan dan tambahkan margin atas/bawah */
+}
+
+.card {
   padding: 20px;
+  max-width: 1200px;  /* Mengatur lebar maksimum dari card */
+  margin: 20px auto; /* Mendorong card ke tengah */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.btn-submit {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #007bff;
 }
 
-h2 {
-  margin-top: 0;
+.btn-submit:hover {
+  background-color: #0056b3;
 }
 
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;  /* Adjusted for label-input pairing */
+  grid-gap: 10px;
+}
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 20px;
 }
 
 table, th, td {
@@ -67,57 +101,19 @@ th, td {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
 th {
-  background-color: #f2f2f2;
+  background-color: #3babbf; /* warna latar belakang hijau */
+  color: white; /* warna teks putih */
+  font-weight: bold; /* font tebal */
 }
 
-.btn, .btn-submit {
-  padding: 5px 10px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Added transition for smoother effect */
+.navbar-logo {
+  height: 50px; /* Anda dapat mengubah sesuai kebutuhan */
+  width: 50px; /* Pastikan lebarnya sama dengan tingginya untuk mendapatkan bentuk bulat sempurna */
+  margin-right: 20px; /* Memberikan jarak sedikit ke header teks */
+  border-radius: 50%; /* Membuat logo berbentuk bulat */
+  object-fit: cover; /* Menjaga agar gambar tidak terdistorsi */
+  overflow: hidden; /* Menyembunyikan bagian gambar yang mungkin keluar dari batas bulat */
 }
 
-.btn:hover {
-  background-color: #ff3300;
-}
 
-.btn-add {
-  background-color: #28a745;
-}
-
-.btn-edit {
-  background-color: #007bff;
-}
-
-.btn-delete {
-  background-color: #dc3545;
-}
-
-.btn-submit {
-  grid-column: span 4;
-  background-color: #007bff;
-}
-
-.btn-submit:hover {
-  background-color: #0056b3;
-}
-
-form {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-}
-
-label {
-  text-align: right;
-  padding-right: 10px;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
-}

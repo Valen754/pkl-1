@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Tambah Buku</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav>
-        <ul class="navbar">
-          <li><a href="home.html">Beranda</a></li>
-          <li><a href="daftar_buku.html">Daftar Buku</a></li>
-          <li><a href="daftar_pengguna.html">Daftar Pengguna</a></li>
-          <li><a href="#">Kontak</a></li>
-        </ul>
-      </nav>
-      <h1>Admin Perpustakaan</h1>
+        <nav>
+          <img src="logo.png" alt="Perpustakaan Logo" class="navbar-logo">
+            <h1 class="custom-header">Admin Perpustakaan</h1>
+            <ul class="navbar">
+                <li><a href="home.html">Beranda</a></li>
+                <li><a href="daftar_buku.html">Daftar Buku</a></li>
+                <li><a href="daftar_pengguna.html">Daftar Pengguna</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-      <h2>Tambah Buku Baru</h2>
-      <!-- Form Untuk Mengedit Buku -->
-      <form>
-        <label for="">Judul:</label>
-        <input type="" id="" name="" required />
+    <div class="container card-container"> <!-- Container untuk card -->
+      <div class="card">
+        <h5 class="card-header">Tambah Buku</h5>
+        <div class="card-body">
+            <form>
+                <label for="judul">Judul:</label>
+                <input type="text" id="judul" name="judul" required />
 
-        <label for="">NUP:</label>
-        <input type="" id="" name="" required />
+                <label for="nup">NUP:</label>
+                <input type="text" id="nup" name="nup" required />
 
-        <label for="">Kode Klasifikasi:</label>
-        <input type="" id="" name="" required />
+                <label for="kode">Kode Klasifikasi:</label>
+                <input type="text" id="kode" name="kode" required />
 
-        <label for="">Pengarang:</label>
-        <input type="" id="" name="" required />
+                <label for="pengarang">Pengarang:</label>
+                <input type="text" id="pengarang" name="pengarang" required />
 
-        <label for="">Penerbit:</label>
-        <input type="" id="" name="" required />
+                <label for="penerbit">Penerbit:</label>
+                <input type="text" id="penerbit" name="penerbit" required />
 
-        <label for="">Tahun Terbit:</label>
-        <input type="" id="" name="" required />
+                <label for="tahun">Tahun Terbit:</label>
+                <input type="text" id="tahun" name="tahun" required />
 
-        <label for="">Sumber buku:</label>
-        <input type="" id="" name="" required />
+                <label for="sumber">Sumber buku:</label>
+                <input type="text" id="sumber" name="sumber" required />
 
-        <label for="">Jumlah buku:</label>
-        <input type="" id="" name="" required />
+                <label for="jumlah">Jumlah buku:</label>
+                <input type="text" id="jumlah" name="jumlah" required />
 
-        <button class="btn-submit" type="submit">Tambah Buku</button>
-      </form>
+                <button class="btn btn-success"><a href="tambah_buku.html" class="text-white">Tambah Buku</a></button>
+            </form>
+        </div>
+      </div>
     </div>
-  </body>
+</body>
+
 </html>
