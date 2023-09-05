@@ -18,7 +18,7 @@
             <ul class="navbar">
                 <li><a href="home.html">Beranda</a></li>
                 <li><a href="daftar_buku.html">Daftar Buku</a></li>
-                <li><a href="daftar_pengguna.html">Daftar Pengguna</a></li>
+                <li><a href="#">Daftar Pengguna</a></li>
                 <li><a href="#">Kontak</a></li>
             </ul>
         </nav>

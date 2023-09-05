@@ -15,16 +15,16 @@
           <img src="logo.png" alt="Perpustakaan Logo" class="navbar-logo">
             <h1 class="custom-header">Admin Perpustakaan</h1>
             <ul class="navbar">
-                <li><a href="home.html">Beranda</a></li>
-                <li><a href="daftar_buku.html">Daftar Buku</a></li>
-                <li><a href="daftar_pengguna.html">Daftar Pengguna</a></li>
+                <li><a href="home.php">Beranda</a></li>
+                <li><a href="daftar_buku.php">Daftar Buku</a></li>
+                <li><a href="daftar_pengguna.php">Daftar Pengguna</a></li>
                 <li><a href="#">Kontak</a></li>
             </ul>
         </nav>
     </header>
     <div class="container card-container"> <!-- Container untuk card -->
       <div class="card">
-        <h5 class="card-header">Tambah Buku Buku</h5>
+        <h5 class="card-header">Tambah Buku</h5>
         <div class="card-body">
             <form>
                 <label for="judul">Judul:</label>
@@ -51,7 +51,7 @@
                 <label for="jumlah">Jumlah buku:</label>
                 <input type="text" id="jumlah" name="jumlah" required />
 
-                <button class="btn btn-success"><a href="tambah_buku.html" class="text-white">Tambah Buku Baru</a></button>
+                <button class="btn btn-success"><a href="tambah_buku.html" class="text-white">Tambah Buku</a></button>
             </form>
         </div>
       </div>

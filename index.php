@@ -16,7 +16,7 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required />
 
-        <button class="btn-login" type="submit"><a href="home.html">Login</a></button>
+        <button class="btn-login" type="submit"><a href="home.php">Login</a></button>
       </form>
     </div>
   </body>

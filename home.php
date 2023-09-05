@@ -13,9 +13,9 @@
         <img src="logo.png" alt="Perpustakaan Logo" class="navbar-logo">
         <h1 class="custom-header">Admin Perpustakaan</h1>
         <ul class="navbar">
-          <li><a href="home.html">Beranda</a></li>
-          <li><a href="daftar_buku.html">Daftar Buku</a></li>
-          <li><a href="daftar_pengguna.html">Daftar Pengguna</a></li>
+          <li><a href="home.php">Beranda</a></li>
+          <li><a href="daftar_buku.php">Daftar Buku</a></li>
+          <li><a href="daftar_pengguna.php">Daftar Pengguna</a></li>
           <li><a href="#">Kontak</a></li>
         </ul>
       </nav>
